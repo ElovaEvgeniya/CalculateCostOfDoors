@@ -1,0 +1,47 @@
+.container-doors {
+    margin: 5% 27% 5% 29%;
+}
+
+.title {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 48px;
+    text-align: center;
+}
+
+.location {
+    display: flex;
+}
+
+.div-city {
+    display: flex;
+    flex-direction: column;
+    height: 120px;
+    justify-content: space-evenly;
+}
+
+.form-select.width {
+    width: 150%;
+}
+
+.section-height {
+    height: 100px;
+
+}
+
+.option {
+    width: 40%;
+}
+
+.div-border {
+    border-bottom: 2px solid rgb(170, 168, 168);
+}
+
+.yallow-button {
+    width: 70%;
+    height: 50px;
+    background-color: #FDB819;
+    border-radius: 5px;
+}

@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link type="text/css" rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <title>Doors</title>
+</head>
+<body>
+    <header>
+        <p class="title">Расчет стоимости входной двери</p>
+    </header>
+    <div class="container-doors">
+        <div></div>
+        <div>
+            <div class="location section-height div-border">
+              <div class="option">Выберите дверь:</div>
+              <div>
+                  <select class="form-select width" aria-label="Default select example">
+                      <option selected>Дверь Люкс - 20 000 руб</option>
+                      <option value="door_1">ДМ NORDIK S</option>
+                      <option value="door_2">ДМ Кардинал Лофт черный</option>
+                      <option value="door_3">ДМ Сириус 27 ВудТангетЧерный</option>
+                      <option value="door_4">ДМ Маркиз</option>
+                      <option value="door_5">ДМ Голиаф</option>
+                      <option value="door_6">ДМ Кардинал-Т</option>
+                      <option value="door_7">ДМ Кабан</option>
+                      <option value="door_8">ДМ Кардинал-Улица</option>
+                    </select>
+              </div>
+            </div>
+            <div class="div-city div-border">
+              <div class="location">
+                <div class="option">Выберите город:</div>
+                <div>
+                    <select class="form-select" aria-label="Default select">
+                        <option selected>Калининград</option>
+                        <option value="city_1">Калининград</option>
+                        <option value="city_2">Гурьевск</option>
+                        <option value="city_3">Светлый</option>
+                        <option value="city_4">Зеленоградск</option>
+                        <option value="city_5">Светлогорск</option>
+                        <option value="city_6">Балтийск</option>
+                        <option value="city_7">Янтарный</option>
+                        <option value="city_8">Мамоново</option>
+                        <option value="city_9">Багратионовск</option>
+                      </select>
+                </div>
+              </div>  
+                <div class="location">
+                  <div class="option">Способ доставки:</div>
+                  <div>
+                    <div class="form-check form-check-inline">
+                      <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+                      <label class="form-check-label" for="inlineCheckbox1">Самовывоз</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                      <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+                      <label class="form-check-label" for="inlineCheckbox2">С доставкой</label>
+                    </div>
+                  </div>
+                </div>
+            </div> 
+            <div class="location section-height div-border">
+              <div class="option">Место установки:</div>
+              <div>
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option3">
+                  <label class="form-check-label" for="inlineCheckbox3">Новостойка</label>
+                </div>
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="checkbox" id="inlineCheckbox4" value="option4">
+                  <label class="form-check-label" for="inlineCheckbox4">Не новое жильё</label>
+                </div>
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="checkbox" id="inlineCheckbox5" value="option5">
+                  <label class="form-check-label" for="inlineCheckbox5">Частный дом</label>
+                </div>
+              </div>
+            </div>  
+            <div class="div-city div-border">
+              <div class="location">
+                <div class="option">Лифт:</div>
+                <div>
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="checkbox" id="inlineCheckbox6" value="option6">
+                    <label class="form-check-label" for="inlineCheckbox6">Не работает</label>
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="checkbox" id="inlineCheckbox7" value="option7">
+                    <label class="form-check-label" for="inlineCheckbox7">Работает</label>
+                  </div>
+                </div>
+              </div>  
+                <div class="location"> 
+                  <div class="option">Этаж:</div>
+                  <div><button type="button" onclick="this.nextElementSibling.stepDown()">-</button>
+                      <input type="number" min="1" max="24" value="1" readonly class="raz">
+                      <button type="button" onclick="this.previousElementSibling.stepUp()">+</button>
+                  </div>
+                </div>  
+            </div>
+            <div>
+              <div>Стоимость: 20 000 руб.</div>
+              <div>+3000 руб. если требуется расширение дверного проёма</div>
+              <div class="yallow-button"><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-telephone" viewBox="0 0 16 16">
+                <path d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.568 17.568 0 0 0 4.168 6.608 17.569 17.569 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.678.678 0 0 0-.58-.122l-2.19.547a1.745 1.745 0 0 1-1.657-.459L5.482 8.062a1.745 1.745 0 0 1-.46-1.657l.548-2.19a.678.678 0 0 0-.122-.58L3.654 1.328zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z"/>
+              </svg> Позвонить чтобы согласовать Ваши пожелания</div>
+            </div>
+        </div>
+
+    </div>
+    
+</body>
+</html>
